@@ -1,0 +1,29 @@
+.product-card {
+    color: white;
+
+    & img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        object-position: top;
+    }
+    & .card-type {
+        color: #0482f9;
+    }
+
+    & .image-container {
+        position: relative;
+        & .card-price {
+            color: black;
+            background-color: #F7CA00;
+            text-align: end;
+            border-radius: 5px;
+            display: inline-block;
+            padding: 0.2rem 0.8rem;
+            margin-top: 1rem;
+            position: absolute;
+            bottom:0px;
+            right: 0;
+        }
+    }
+}

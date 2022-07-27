@@ -1,0 +1,29 @@
+.logo {
+    width: 60px;
+
+}
+.my-nav-link {
+    color: #706f6f;
+    font-weight: bold;
+
+    &:hover {
+        color: #0482F9;
+        .select-underline {
+            opacity: 100%;
+        }
+    }
+
+    &:focus {
+        color: #0482F9;
+        .select-underline {
+            opacity: 100%;
+        }
+    }
+}
+.select-underline {
+    width: 40px;
+    margin: auto;
+    border: 2px solid #0482F9;
+    transform: translate(0px, 40px);
+    opacity: 0%;
+}

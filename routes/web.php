@@ -18,3 +18,11 @@ Route::get("/", function () {
     
     return view("home", compact("products"));
 })->name("home");
+
+Route::get("/products{id}", function ($id){
+    $products = config("comics");
+
+    $foundProduct = array_filter($products, function($product) use ($id) {
+        return $product["id"] === intval($id);
+    });
+});
